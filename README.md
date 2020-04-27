@@ -1,5 +1,7 @@
 # Bug report
 
+https://github.com/umijs/umi/issues/4550
+
 If an environment variables is referenced via `process.env.` which is not existing, the build contains **all** environment variables that were set during execution of the build command. This is a potential security issue, as it is common practise to have secrets set as environment variable in an automated CI/CD pipeline. Any secrets there would leak into the final build and leak to the open web.
 
 ## Setup
